@@ -1,0 +1,53 @@
+Before going to git hub let first understand the git commands
+git status:
+it will show what are the file you changed or modified.
+
+git add:
+if you want to add modified files into stagging area that means local desktop, you have to use git add <file name>
+if you want to add all file you can use shortcut method like
+git add .
+git add test*
+
+git commit:
+it used to commit your changed locally using below syntax
+git commit -m "Any message"
+if you want to change the git commit message you have to use like below
+git commit --amend -m "new message"
+
+git push:
+push your code to git hub web based. Git hug contains some cloud service your store many files there.
+
+git branch:
+-if you want to create new branch
+git branch <branch name>
+-if you want to see all branch you worked
+git branch -a
+-if you want to delte the branch
+git branch -d <branch name> [you cant delete this branch unless you merged the code into you origin branch like master or integration]
+git branch -D <branch name> [you can delete even you didnt merge the change.]
+
+git merge:
+suppose in you team worked on the same file with different content in different branch. finally you have to merge your changes into master. in this case you have to use like below 
+you have to be there in master branch 
+git merge branch_one
+git merge branch_two
+
+both branch changed will be displayed in master
+
+suppose already the file available in master and you changed something in your new branch. when you do merge you will face conflict issue like below
+<<<HEAD
+something
+=====
+something
+>>>>>>9845iijkj
+you need to resolve it.which one you need .
+
+git log:
+it will show all commit deatils you did on the current branch. 
+git log --oneline
+it will show short form of commit id details
+
+touch <file name> - it used to create the file using touch command
+
+
+

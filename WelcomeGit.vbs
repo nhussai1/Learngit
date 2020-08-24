@@ -1,5 +1,6 @@
 Inputbox "Are eagerly to learn github commands?"
 msgbox "Hello to learn Git command"
+git fetch using integration
 learn undo using git checkout
 git revert
 git pull and git fetch

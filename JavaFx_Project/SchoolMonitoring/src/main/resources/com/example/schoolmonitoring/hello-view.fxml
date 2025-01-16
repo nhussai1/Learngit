@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.schoolmonitoring.HelloController">
+
+    <ImageView
+            fx:id="imageView"
+            fitHeight="500.0"
+            fitWidth="200.0"
+            layoutX="500.0"
+            layoutY="200.0"
+            pickOnBounds="true"
+            preserveRatio="true"
+    >
+        <Image url="@/dirksen.jpeg"/>
+    </ImageView>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label fx:id="studentInfo"/>
+    <Label fx:id="studentName" text="Enter Student Name"/>
+    <TextField fx:id="stuNameTextField" onAction="#getStudentName"/>
+    <Label fx:id="stuRegNo" text="Enter Student Register Number"/>
+    <TextField fx:id="stuRegNoTextField" onAction="#getStuRegNoTextField"/>
+    <Label fx:id="stuAdd" text="Enter Student Address"/>
+    <TextField fx:id="stuAddTextField" onAction="#getStuAddTextField"/>
+    <Button text="Submit" onAction="#onSubmitButtonClick"/>
+
+
+</VBox>
